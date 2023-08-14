@@ -9,5 +9,6 @@ if [ ! -f "${CONFFILE}" ]; then
 	exit 1
 fi
 
-/usr/sbin/privoxy --no-daemon --pidfile "${PIDFILE}" "${CONFFILE}"
+ls /etc/privoxy/
 
+/usr/sbin/privoxy --no-daemon --pidfile "${PIDFILE}" "${CONFFILE}"
