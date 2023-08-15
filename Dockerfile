@@ -1,7 +1,7 @@
 
 FROM alpine:latest
 
-MAINTAINER dmacario
+MAINTAINER dav.macario@gmail.com
 
 RUN apk --no-cache add privoxy 
 COPY privoxy-start.sh /usr/local/bin/
