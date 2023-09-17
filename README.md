@@ -9,7 +9,9 @@ Privoxy is a "privacy enhancing proxy", which can be enabled to filter web pages
 (please, __read the security note below__)
 
     docker run -d --name=privoxy -p 8118:8118 caligari/privoxy:latest
-    
+
+It is possible to add the `--restart=unless-stopped` flag to the command in order to prevent reboots of the host to require restarting the container.
+
 ## Testing privoxy
 
       curl --proxy http://*host-address*:8118/ http://ifconfig.me
